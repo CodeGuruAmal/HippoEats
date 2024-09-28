@@ -98,7 +98,7 @@ const SearchResult = () => {
   };
 
   return (
-    <div className="w-full h-screen">
+    <div className="w-full min-h-screen">
       <MoreDetails />
 
       <CartRefresher />

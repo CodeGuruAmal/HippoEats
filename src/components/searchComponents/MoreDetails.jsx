@@ -45,7 +45,7 @@ const MoreDetails = () => {
         onClick={() => dispatch(setMoreDetail({}))}
         className=" w-full h-full bg-neutral-900 opacity-50"
       ></div>
-      <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[25rem] h-[30rem] rounded-[2rem] bg-neutral-200 overflow-hidden">
+      <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[25rem] h-[31rem] scale-[.86] rounded-[2rem] bg-neutral-200 overflow-hidden">
         <button className="cursor-pointer absolute top-5 right-6 text-lg p-1 bg-neutral-200 rounded-full">
           <TbX
             onClick={() => dispatch(setMoreDetail({}))}
@@ -58,14 +58,14 @@ const MoreDetails = () => {
             src={
               moreDetail?.info?.imageId
                 ? `https://media-assets.swiggy.com/swiggy/image/upload/${moreDetail?.info?.imageId}`
-                : "../../public/img/alt.jpg"
+                : "https://i.pinimg.com/564x/fd/24/4b/fd244bb08e07e4fa26adf8285e5cfc09.jpg"
             }
             alt=""
           />
         </div>
         <div className=" w-full flex flex-col gap-4 p-4">
           <div className="">
-          <h1 className="font-[Gilroy-Bold] text-sm text-neutral-600">
+          <h1 className="font-[Gilroy-Bold] text-lg md:text-sm text-neutral-600">
             {moreDetail?.info?.name && moreDetail?.info?.name}
           </h1>
           <div className="flex w-full items-center justify-between text-sm text-neutral-600 font-[Gilroy-Semibold]">
@@ -83,7 +83,7 @@ const MoreDetails = () => {
             </button>
           </div>
           </div>
-          <p className="text-[.77rem] font-[Gilroy-Medium] text-neutral-500">{moreDetail?.info?.description}</p>
+          <p className="md:text-[.77rem] text-[.85rem] font-[Gilroy-Medium] text-neutral-500">{moreDetail?.info?.description}</p>
         </div>
       </div>
     </div>
