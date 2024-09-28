@@ -1,15 +1,17 @@
 import axios from "axios";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import { setFoodRestaurant } from "../utils/homeSlice";
 import RestaurantCard from "./homeComponents/RestaurantCard";
 import { IoArrowBack } from "react-icons/io5";
+import FoodLoader from "./loaderComponents/FoodLoader";
 
 const RestaurantForFood = () => {
   const { id } = useParams();
   const coordinates = useSelector((state) => state.location.coordinates);
   const foodRestaurant = useSelector((state) => state.home.foodRestaurant);
+  const [loading, setLoading] = useState(true);
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -31,7 +33,13 @@ const RestaurantForFood = () => {
 
       axios
         .get(apiUrl)
-        .then((res) => dispatch(setFoodRestaurant(res?.data?.data?.cards)))
+        .then((res) => {
+          dispatch(setFoodRestaurant(res?.data?.data?.cards));
+
+          setTimeout(() => {
+            setLoading(false);
+          }, 800)
+        })
         .catch((err) => console.log(err));
     }
   }, [coordinates, id]);
@@ -42,6 +50,11 @@ const RestaurantForFood = () => {
   const description = foodRestaurant[0]?.card?.card?.description;
 
   const restaurantData = foodRestaurant.slice(3);
+
+
+  if(loading) {
+    return <FoodLoader />
+  }
 
   return (
     <div className="lg:w-[80%] w-[95%]  left-1/2 -translate-x-1/2 absolute top-16">
@@ -72,7 +85,7 @@ const RestaurantForFood = () => {
             return (
               info && (
                 
-                  <div  key={index} className="card duration-100 hover:scale-95 w-[10rem] md:w-[12rem] ">
+                  <div  key={index} className="card duration-100 hover:scale-95 w-[8.5rem] md:w-[12rem] ">
                     <RestaurantCard {...info} />
                   </div>
                 

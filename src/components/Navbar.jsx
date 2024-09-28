@@ -386,7 +386,7 @@ const Navbar = () => {
             <span
               className={` ${
                 cartData.length > 0 ? "flex" : "hidden"
-              } md:hidden absolute -top-3 -right-4 h-6 w-6 text-white items-center justify-center bg-orange-500 rounded-full`}
+              } md:hidden absolute -top-3 -right-4 h-6 w-6 text-white items-center justify-center bg-secondaryFont rounded-full`}
             >
               {cartData.length > 0
                 ? cartData.length < 100

@@ -279,13 +279,13 @@ const Checkout = () => {
         <button
           onClick={togglePlaceOrder}
           className={`${
-            isOrderPlaced ? "bg-red-600 text-white" : "bg-green-600"
-          } px-4 py-2 mt-5 font-[Gilroy-Semibold] text-sm rounded-md w-full`}
+            isOrderPlaced ? "bg-red-600 text-white" : "bg-green-600 text-white"
+          } px-4 py-2 pb-10 mt-5 font-[Gilroy-Semibold] text-sm rounded-md w-full`}
         >
           {isOrderPlaced ? "Cancel Order" : "Place Order"}
         </button>
       ) : (
-        <div className="flex gap-3 my-6">
+        <div className="flex gap-3 my-6 ">
           <button
             onClick={() => {
               navigate("/login");
