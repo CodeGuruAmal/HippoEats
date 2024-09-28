@@ -267,7 +267,7 @@ const Menu = () => {
                           <div className="relative">
                             <img
                               className={`md:w-32 w-24 md:h-32 h-24 object-cover rounded-lg`}
-                              src={imageId ? `https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/${imageId}` : "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Fvector-art%2F6851246-spoon-and-fork-icon&psig=AOvVaw2Zn8JlPBkL8fTehC3z3WVU&ust=1727613735244000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMDUl-rU5YgDFQAAAAAdAAAAABAY"}
+                              src={imageId ? `https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/${imageId}` : "../../../public/img/alt.png"}
                               alt=""
                             />
 
@@ -411,7 +411,7 @@ const Menu = () => {
                                 <div className=" h-full p-2 relative ">
                                   <img
                                     className={`w-32 h-32 mx-auto object-cover rounded-lg`}
-                                    src={imageId ? `https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/${imageId}` : "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Fvector-art%2F6851246-spoon-and-fork-icon&psig=AOvVaw2Zn8JlPBkL8fTehC3z3WVU&ust=1727613735244000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMDUl-rU5YgDFQAAAAAdAAAAABAY"}
+                                    src={imageId ? `https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/${imageId}` : "../../../public/img/alt.png"}
                                     alt=""
                                   />
                                   <button
@@ -442,3 +442,22 @@ const Menu = () => {
 };
 
 export default Menu;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
