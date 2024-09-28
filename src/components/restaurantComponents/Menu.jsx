@@ -267,7 +267,7 @@ const Menu = () => {
                           <div className="relative">
                             <img
                               className={`md:w-32 w-24 md:h-32 h-24 object-cover rounded-lg`}
-                              src={imageId ? `https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/${imageId}` : "../../public/img/alt.png"}
+                              src={imageId ? `https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/${imageId}` : "../../public/img/alt.svg"}
                               alt=""
                             />
 
@@ -411,7 +411,7 @@ const Menu = () => {
                                 <div className=" h-full p-2 relative ">
                                   <img
                                     className={`w-32 h-32 mx-auto object-cover rounded-lg`}
-                                    src={imageId ? `https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/${imageId}` : "../../public/img/alt.png"}
+                                    src={imageId ? `https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/${imageId}` : "../../public/img/alt.svg"}
                                     alt=""
                                   />
                                   <button
