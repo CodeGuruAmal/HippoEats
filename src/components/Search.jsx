@@ -21,17 +21,22 @@ const Search = () => {
 
   // ======================================================= This section fetchs the popular cuisine recommendations =======================================================
 
+  // https://www.swiggy.com/mapi/landing/PRE_SEARCH?lat=19.0759837&lng=72.8776559
+
   useEffect(() => {
-    if (
-      coordinates?.geometry?.location?.lat &&
-      coordinates?.geometry?.location?.lng
-    ) {
+    if (coordinates?.geometry?.location) {
+      const { lat, lng } = coordinates.geometry.location;
+      // const isMobile = window.innerWidth <= 768;
+
+      // const apiUrl = isMobile
+      //   ? `https://cors-proxy-flax-ten.vercel.app/mapi/landing/PRE_SEARCH?lat=${lat}&lng=${lng}`
+      //   : `https://cors-proxy-flax-ten.vercel.app/dapi/landing/PRE_SEARCH?lat=${lat}&lng=${lng}`
       axios
         .get(
-          `https://cors-proxy-flax-ten.vercel.app/landing/PRE_SEARCH?lat=${coordinates?.geometry?.location?.lat}&lng=${coordinates?.geometry?.location?.lng}`
+         `https://cors-proxy-flax-ten.vercel.app/landing/PRE_SEARCH?lat=${lat}&lng=${lng}`
         )
         .then((res) => {
-          setPopularCuisine(res?.data?.data?.cards[1]?.card?.card);
+          setPopularCuisine(res?.data?.data?.cards.find((d) => d?.card?.card.id === "PopularCuisinessearchpage")?.card?.card);
           setTimeout(() => {
             setLoading(false);
           }, 800);
