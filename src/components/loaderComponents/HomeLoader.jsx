@@ -8,12 +8,12 @@ const HomeLoader = () => {
           <span className="loader"></span>
           <img
             className="w-9 animate-image animate-image-1 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
-            src="../../public/img/load_burger.avif"
+            src="../../public/img/load_burger.png"
             alt=""
           />
           <img
             className="w-9 animate-image animate-image-2 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
-            src="../../public/img/load_noodles.avif"
+            src="../../public/img/load_noodles.png"
             alt=""
           />
         </div>
