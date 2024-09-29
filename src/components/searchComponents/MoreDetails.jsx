@@ -45,7 +45,7 @@ const MoreDetails = () => {
         onClick={() => dispatch(setMoreDetail({}))}
         className=" w-full h-full bg-neutral-900 opacity-50"
       ></div>
-      <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[25rem] h-[31rem] scale-[.86] rounded-[2rem] bg-neutral-200 overflow-hidden">
+      <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[25rem] h-[31rem] scale-[.86] rounded-[2rem] bg-neutral-200 overflow-y-scroll">
         <button className="cursor-pointer absolute top-5 right-6 text-lg p-1 bg-neutral-200 rounded-full">
           <TbX
             onClick={() => dispatch(setMoreDetail({}))}
