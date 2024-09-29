@@ -25,7 +25,7 @@ const CartRefresher = () => {
         className="h-full w-full bg-neutral-900 opacity-50"
       ></div>
       <div
-        className={`h-52 w-96 scale-[.8] sm:scale-95 bg-neutral-100 absolute left-1/2 -translate-x-1/2 duration-300 px-4 py-5 ease-in-out flex flex-col gap-3 ${
+        className={`h-52 w-96 scale-[.8] sm:scale-95 rounded-xl bg-neutral-100 absolute left-1/2 -translate-x-1/2 duration-300 px-4 py-5 ease-in-out flex flex-col gap-3 ${
           isDiffResMessage ? "bottom-3" : "-bottom-32"
         }`}
       >
