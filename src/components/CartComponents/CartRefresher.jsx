@@ -25,12 +25,12 @@ const CartRefresher = () => {
         className="h-full w-full bg-neutral-900 opacity-50"
       ></div>
       <div
-        className={`h-40 w-96 bg-neutral-100 absolute left-1/2 -translate-x-1/2 duration-300 px-4 py-5 ease-in-out flex flex-col gap-3 ${
-          isDiffResMessage ? "bottom-5" : "-bottom-32"
+        className={`h-52 w-96 scale-[.8] sm:scale-95 bg-neutral-100 absolute left-1/2 -translate-x-1/2 duration-300 px-4 py-5 ease-in-out flex flex-col gap-3 ${
+          isDiffResMessage ? "bottom-3" : "-bottom-32"
         }`}
       >
-        <h1 className="text-xl font-[Gilroy-Bold]">Items already in cart</h1>
-        <p className="text-[.75rem] font-[Gilroy-Medium]">
+        <h1 className="text-2xl font-[Gilroy-Bold]">Items already in cart</h1>
+        <p className="text-[.86rem] font-[Gilroy-Medium]">
           Your cart contains items from other restaurant. Would you like to
           reset your cart for adding items from this restaurant?
         </p>
