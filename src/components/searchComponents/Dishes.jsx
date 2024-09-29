@@ -91,7 +91,7 @@ const Dishes = ({ card, handleMoreDetail }) => {
               src={
                 card.info.imageId
                   ? `https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/${card?.info?.imageId}`
-                  : "../../public/img/alt.jpg"
+                  : "https://i.pinimg.com/564x/fd/24/4b/fd244bb08e07e4fa26adf8285e5cfc09.jpg"
               }
               alt=""
             />
