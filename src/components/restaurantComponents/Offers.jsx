@@ -12,7 +12,7 @@ const Offers = () => {
           Deals For You
         </h3>
 
-        <div className="flex gap-4 text-xl text-zinc-800">
+        {/* <div className="flex gap-4 text-xl text-zinc-800">
           <button
             className={`text-sm w-6 h-6 rounded bg-zinc-300 flex items-center justify-center transition-opacity duration-300 `}
           >
@@ -23,7 +23,7 @@ const Offers = () => {
           >
             <IoArrowForward />
           </button>
-        </div>
+        </div> */}
       </div>
 
       <div className="h-slider flex mt-4 w-full overflow-x-scroll gap-3 whitespace-nowrap">
